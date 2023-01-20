@@ -33,7 +33,7 @@ footer {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-70%);
   color: #555;
   font-size: 0.8rem;
   text-align: center;
@@ -66,4 +66,79 @@ cursor: pointer;
   clip-path: polygon(25% 0,100% 0,100% 100%, 0 100%);
   right:0;
   transition:all 0.5s ease;
+}
+
+.slice .text{
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+  background:linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(255, 255, 255, 0) 100%) ;
+}
+
+.slice h2{
+  font-size: 2.5rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.slice h2:after{
+  content:'';
+  width: 2rem;
+  height: 1rem;
+  margin-top: 1rem;
+  position: absolute;
+  bottom: 0;
+  transition:all 0.5s ease;
+}
+
+.slice.left h2:after{
+  background:#ea2a5e ;
+  left: 0;
+
+}
+
+.slice.right h2:after{
+  background:#6532a0 ;
+  right: 0;
+
+}
+
+.slice .abstract{
+  color: #ddd;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding-top:1rem;
+  transition:all 0.5s ease; 
+}
+
+.slice p{
+  margin-bottom: 1rem;
+}
+
+.slice.left .text{
+  left:0;
+  padding-right: 15rem;
+}
+
+.slice.right .text{
+  right:0;
+  padding-left: 15rem;
+  text-align: right;
+}
+
+.slice .bg{
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  filter:grayscale(1);
+  transition:all 0.5s ease; 
+}
+
+.slice.left .bg{
+  background-image: url(http://assets.stickpng.com/images/58482acecef1014c0b5e4a1e.png);
+}
+
+
+.slice.right .bg{
+  background-image: url(https://creazilla-store.fra1.digitaloceanspaces.com/icons/3254421/svelte-icon-icon-sm.png);
 }
