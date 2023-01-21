@@ -15,6 +15,14 @@ body {
   height: 100vh;
 }
 
+a{
+  text-decoration: underline;
+  color: #ddd;
+  padding: .2rem;
+  border-radius: 15%;
+  transition:all 0.5s ease;
+  
+}
 header {
   position: absolute;
   top: 0;
@@ -77,6 +85,7 @@ cursor: pointer;
   background:linear-gradient(0deg, rgba(0,0,0,0.75) 0%, rgba(255, 255, 255, 0) 100%) ;
 }
 
+
 .slice h2{
   font-size: 2.5rem;
   position: relative;
@@ -93,13 +102,13 @@ cursor: pointer;
 }
 
 .slice.left h2:after{
-  background:#ea2a5e ;
+  background:#42d392 ;
   left: 0;
 
 }
 
 .slice.right h2:after{
-  background:#6532a0 ;
+  background:#ff8000 ;
   right: 0;
 
 }
@@ -167,5 +176,20 @@ cursor: pointer;
 }
 
 .slice.right:hover{  
-  background: #d4bb32;
+  background: #ac9530;
+}
+
+.slice.left a:hover{
+  background-color: #6532a0;
+  text-decoration: none;
+}
+
+.slice.right a:hover{
+  background-color: #ea2a5e;
+  text-decoration: none;
+}
+footer a:hover{
+  color: #af2298;
+  text-decoration: none;
+  background-color: white;
 }
